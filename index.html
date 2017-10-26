@@ -1,0 +1,174 @@
+<html>
+    <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		
+		<style type="text/css">
+		#problem {margin-left:30px}
+		.radio,.checkbox,#text {margin-left:50px}
+		</style>
+		
+		<title>UML_testing</title>
+        <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.css">
+        <script src="./jquery-3.2.1.js"></script>        
+        <script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    </head>
+    <body>
+        <!--write your code here-->
+        <!-- Button trigger modal -->
+		<div class="container">
+			<form class="form-horizontal" role="form">
+				<div class="row">
+					<h2>统一建模语言理论测试</h2>
+				</div>
+				<div class="form-group">
+					<label for="name" class="col-sm-1 control-label">考试科目:</label>
+					<div class="col-sm-2">
+						<p class="form-control-static">统一建模语言</p>
+					</div>
+
+					<!-- Add the extra clearfix for only the required viewport -->
+					<div class="clearfix visible-xs-block"></div>
+					<!--
+					<div class="col-xs-2 col-sm-1">时间：</div>
+					<div class="col-xs-2 col-sm-1">100分钟</div>
+					<div class="col-xs-2 col-sm-1">得分：</div>
+					<div class="col-xs-2 col-sm-1">100</div>
+					-->
+					<label for="name" class="col-sm-1 control-label">时间:</label>
+					<div class="col-sm-2">
+						<p class="form-control-static">100分钟</p>
+					</div>
+					<label for="name" class="col-sm-1 control-label">得分:</label>
+					<div class="col-sm-2">
+						<p class="form-control-static">100</p>
+					</div>
+				</div>
+			
+				<div class="form-group">
+					<label for="name" class="col-sm-1 control-label">班级:</label>
+					<div class="col-sm-2">
+						<input type="text" class="form-control" id="name" placeholder="1班">
+					</div>
+					<label for="name" class="col-sm-1 control-label">学号:</label>
+					<div class="col-sm-2">
+						<input type="text" class="form-control" id="name" placeholder="001">
+					</div>
+					<label for="name" class="col-sm-1 control-label">姓名:</label>
+					<div class="col-sm-2">
+						<input type="text" class="form-control" id="name" placeholder="王小闹">
+					</div>
+				
+				</div>		
+				<h3>一、填空题（每空5分，共20分）</h3>
+				<div class="form-group">
+					<label for="name" class="col-sm-2 control-label">1.UML的中文全称是:</label>
+					<div class="col-sm-6">
+						<input type="text" class="form-control" id="name" placeholder="统一建模语言">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="name" class="col-sm-2 control-label">2.对象最突出的特性是:</label>
+					<div class="col-sm-2">
+						<input type="text" class="form-control" id="name" placeholder="封装性">
+					</div>
+					<div class="col-sm-2">
+						<input type="text" class="form-control" id="name" placeholder="继承性">
+					</div>
+					<div class="col-sm-2">
+						<input type="text" class="form-control" id="name" placeholder="多态性">
+					</div>
+				</div>
+				<h3>二、选择题（每题10分，共20分）</h3>
+				<label for="name" id="problem">1.UML与软件工程的关系是:</label>
+				<div class="radio">
+					<label><input type="radio" name="optionRadios" id="optionRadios1" value="option1">UML就是软件工程</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="optionRadios" id="optionRadios2" value="option1" checked>UML参与到软件工程中软件开发过程的几个阶段</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="optionRadios" id="optionRadios3" value="option1">UML与软件工程无关</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="optionRadios" id="optionRadios4" value="option1">UML是软件工程的一部分</label>
+				</div>
+				
+				<label for="name" id="problem">2.Java语言支持:</label>
+				<div class="radio">
+					<label><input type="radio" name="optionRadios2" id="optionRadios21" value="option1" checked>单继承</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="optionRadios2" id="optionRadios22" value="option1">多继承</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="optionRadios2" id="optionRadios23" value="option1">单继承与多继承都支持</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="optionRadios" id="optionRadios24" value="option1">单继承与多继承都不支持</label>
+				</div>
+				
+				<h3>三、多选题（每题10分，共20分）</h3>
+				<label id="problem" for="name">1.用例的粒度分为以下哪三种:</label>
+				<div class="checkbox">
+					<label><input name="box1" type="checkbox" value="" checked>（A）概述级</label>
+				</div>
+				<div class="checkbox">
+					<label><input name="box1" type="checkbox" value="" checked>（B）需求级</label>
+				</div>
+				<div class="checkbox">
+					<label><input name="box1" type="checkbox" value="">（C）用户目标集</label>
+				</div>
+				<div class="checkbox">
+					<label><input name="box1" type="checkbox" value="" checked>（D）子功能级</label>
+				</div>
+				
+				<label id="problem" for="name">2.类图由以下哪三部分组成:</label>
+				<div class="checkbox">
+					<label><input name="box2" type="checkbox" value="" checked>（A）名称（Name）</label>
+				</div>
+				<div class="checkbox">
+					<label><input name="box2" type="checkbox" value="" checked>（B）属性（Attribute）</label>
+				</div>
+				<div class="checkbox">
+					<label><input name="box2" type="checkbox" value="" checked>（C）操作（Operation）</label>
+				</div>
+				<div class="checkbox">
+					<label><input name="box2" type="checkbox" value="">（D）方法（Function）</label>
+				</div>
+				
+				<h3>四、判断题（每题10分，共20分）</h3>
+				<div class="row" id="problem">
+					<label for="name">1.用例图只是用于和客户交流和沟通的，用于确定需求。</label>
+					<label class="radio-inline">
+							<input type="radio" name="optionsRadiosinline1" id=iptionsRadios1" value="option1">&radic;
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="optionsRadiosinline1" id=iptionsRadios2" value="option2" checked>&times;
+					</label>
+				</div>
+				<div class="row" id="problem">
+					<label for="name">2.在状态图中，终止状态在一个状态图中允许有任意多个。</label>
+					<label class="radio-inline">
+						<input type="radio" name="optionsRadiosinline2" id=iptionsRadios3" value="option3" checked>&radic;
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="optionsRadiosinline2" id=iptionsRadios4" value="option4">&times;
+					</label>
+				</div>
+				
+				<h3>五、简答题（每题20分，共20分）</h3>
+				<div class="form-group">
+				<label for="name" id="problem">1.简述什么是模型以及模型的表现形式？
+				</label>
+				<textarea class="form-control" rows="5" cols="8" id="text">模型是对现实世界的简化和抽象，模型是对所研究的系统、过程、事物或概念的一种表达形式。可以是物理实体；可以是某种图形；或者是一种数学表达式。</textarea>
+				</div>
+				<button type="submit" class="btn btn-default" id="problem">提交</button>
+			</form>
+		<div>
+
+    </body>
+</html>
